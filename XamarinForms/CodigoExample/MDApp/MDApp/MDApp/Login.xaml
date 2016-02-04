@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MDApp.Login"
+              Title="Login"
+              BackgroundColor="White">
+
+  <AbsoluteLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+  <Image Source="profile.jpg"
+        AbsoluteLayout.LayoutBounds="0.5, 0.2, 0.4, 0.4"
+        AbsoluteLayout.LayoutFlags="All"/>
+    
+  <Entry Placeholder="UserName" TextColor="Gray"
+         AbsoluteLayout.LayoutBounds="0.5, 0.6, 0.8, 0.1"
+        AbsoluteLayout.LayoutFlags="All"/>
+    
+  <Entry Placeholder="Password" IsPassword="True" TextColor="Gray"
+         AbsoluteLayout.LayoutBounds="0.5, 0.7, 0.8, 0.1"
+        AbsoluteLayout.LayoutFlags="All"/>
+  <Button Text="LOGIN" 
+          Clicked="OnButtonClickMenu"
+          x:Name =" LoginButton"
+          AbsoluteLayout.LayoutBounds="0.5, 0.9, 0.8, 0.1"
+        AbsoluteLayout.LayoutFlags="All"/>
+  
+  </AbsoluteLayout>
+  
+
+
+</ContentPage>
